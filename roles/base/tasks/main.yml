@@ -1,0 +1,9 @@
+- name: Install base packages
+  become: yes
+  apt:
+    update_cache: yes
+    name:
+      - htop
+      - vim
+      - build-essential
+    state: latest
